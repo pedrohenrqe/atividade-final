@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer";
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    padding: 40px;
+    border-radius: 32px;
+    background-color: grey;
+}
+
+.icon{
+    background-image: url(./img/widebody-porsche-993-profile-rolling.avif);
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+.icon2{
+    background-image: url(./img/The_character_of_a_man_lies_not_in_his_body_but_in_his_soul._2048x2048.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+    grid-area: nav;
+    display: grid;
+    /* padding-right: 40px; */
+}
+
+.imagem {
+    height: 30px;
+}
+
+.menu-container{
+    background-color: black;
+    /* border-radius: 32px; */
+    display: grid;
+    grid-template-rows: 1fr 180px;
+    overflow: hidden;
+}
+
+.icon{
+    background-color: aquamarine;
+}
+
+.menu{
+    background-color: blueviolet;
+}
+
+header{
+    grid-area: header;
+    background-color: lightblue;
+    display: grid;
+    place-items: end;
+}
+
+.avatar-container{
+    background-color: tan;
+    height: 50px;
+    width: 210px;
+}
+
+main{
+    display: grid;
+    grid-area: main;
+    background-color: lightgreen;
+    grid-template-areas: 
+        "title title title"
+        "cards cards cards"
+        "graphic graphic posts";
+    grid-template-rows: 70px 1fr 2fr;
+}
+
+.title-container{
+    grid-area: title;
+    background-color: tomato;
+}
+.cards-container{
+    grid-area: cards;
+    background-color: darkgreen;
+}
+
+.graphic-container{
+    grid-area: graphic;
+    background-color: mediumvioletred;
+}
+
+.posts-container{
+    grid-area: posts;
+    background-color: blueviolet;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightsalmon;
+}
